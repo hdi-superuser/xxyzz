@@ -3,6 +3,10 @@
 
 #include "main_lib.h"
 
+/*
+    Check are function
+ */
+
 bool ok_s(int m, int n, int k, int a[], int b[]) {
     int are = 0;
     rep(i, 1, k) are += a[i] * b[i];

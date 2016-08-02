@@ -3,6 +3,10 @@
 
 #include "main_lib.h"
 
+/*
+    Global variable use in this solution.
+ */
+
 #define file_in "main.inp"
 #define file_out "main.out"
 #define N 5001
@@ -11,5 +15,7 @@
 
 int m, n, k, a[N], b[N];
 int mat_res[N][N];
+
+bool no_solution;
 
 #endif // GLOBAL_VAR_H_INCLUDED

@@ -27,3 +27,29 @@
 1470059361 c:\users\duy huynh\desktop\tht\solution\debug\binpack_naive_algo.h
 	"main_lib.h"
 
+1470157395 source:c:\users\duy huynh\desktop\xxyzz\debug\main.cpp
+	"main_lib.h"
+
+1470154857 c:\users\duy huynh\desktop\xxyzz\debug\main_lib.h
+	<bits/stdc++.h>
+	"shortcut.h"
+	"chk_s.h"
+	"global_var.h"
+	"io_data.h"
+	"binpack_naive_algo.h"
+
+1470156926 c:\users\duy huynh\desktop\xxyzz\debug\shortcut.h
+	"main_lib.h"
+
+1470154709 c:\users\duy huynh\desktop\xxyzz\debug\chk_s.h
+	"main_lib.h"
+
+1470156502 c:\users\duy huynh\desktop\xxyzz\debug\global_var.h
+	"main_lib.h"
+
+1470156563 c:\users\duy huynh\desktop\xxyzz\debug\io_data.h
+	"main_lib.h"
+
+1470157239 c:\users\duy huynh\desktop\xxyzz\debug\binpack_naive_algo.h
+	"main_lib.h"
+

@@ -5,6 +5,11 @@
 
 using namespace std;
 
+/*
+    C++ shortcut.
+    Shortcut for faster and greater than code.
+ */
+
 #define fst first
 #define snd second
 #define int long long
@@ -22,6 +27,7 @@ typedef pair<int, int> ii;
 typedef vector<int> vi;
 typedef vector<ii> vii;
 
+void outln() { cout << endl; }
 template<typename T> void in(T& x) { cin >> x; }
 template<typename T> void out(T x) { cout << x; }
 template<typename T> void outln(T x) { cout << x << endl; }

@@ -3,6 +3,10 @@
 
 #include <bits/stdc++.h>
 
+/*
+    Include all library of this solution.
+ */
+
 #include "shortcut.h"
 #include "chk_s.h"
 #include "global_var.h"
