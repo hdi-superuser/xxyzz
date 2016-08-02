@@ -1,5 +1,4 @@
 # xxyzz
-Everything are private
 
 The MIT License (MIT)
 
