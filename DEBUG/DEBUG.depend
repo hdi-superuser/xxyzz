@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1470059272 source:c:\users\duy huynh\desktop\tht\solution\debug\main.cpp
+	"main_lib.h"
+
+1470058546 c:\users\duy huynh\desktop\tht\solution\debug\chk_s.h
+	"main_lib.h"
+
+1470058527 c:\users\duy huynh\desktop\tht\solution\debug\shortcut.h
+	"main_lib.h"
+
+1470058246 c:\users\duy huynh\desktop\tht\solution\debug\main_lib.h
+	<bits/stdc++.h>
+	"shortcut.h"
+	"chk_s.h"
+	"global_var.h"
+	"io_data.h"
+	"binpack_naive_algo.h"
+
+1470058565 c:\users\duy huynh\desktop\tht\solution\debug\global_var.h
+	"main_lib.h"
+
+1470057704 c:\users\duy huynh\desktop\tht\solution\debug\io_data.h
+	"main_lib.h"
+
+1470058012 c:\users\duy huynh\desktop\tht\solution\debug\naive_algo.h
+
+1470059361 c:\users\duy huynh\desktop\tht\solution\debug\binpack_naive_algo.h
+	"main_lib.h"
+
