@@ -14,8 +14,8 @@
 #define inf 0x7fffffff
 
 int m, n, k, a[N], b[N];
-int mat_res[N][N];
+int mat_res[N][N], mat[N][N];
 
-bool no_solution;
+bool no_solution, finish;
 
 #endif // GLOBAL_VAR_H_INCLUDED

@@ -8,10 +8,11 @@ using namespace std;
  */
 
 main( void ) {
-    data_file();
-    import_data();
+    data_file();    import_data();
+
     if (!ok_s(m, n, k, a, b)) outbrk(-1);
 
-    binpack_naive(m, n, k, a, b);
+    simple_greedy(m, n, k, a, b);
+
     export_data();
 }
