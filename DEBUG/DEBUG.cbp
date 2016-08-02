@@ -34,6 +34,7 @@
 		</Compiler>
 		<Unit filename="binpack_naive_algo.h" />
 		<Unit filename="chk_s.h" />
+		<Unit filename="global_method.h" />
 		<Unit filename="global_var.h" />
 		<Unit filename="io_data.h" />
 		<Unit filename="main.cpp" />
@@ -41,6 +42,7 @@
 		<Unit filename="main.out" />
 		<Unit filename="main_lib.h" />
 		<Unit filename="shortcut.h" />
+		<Unit filename="simple_greedy.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
