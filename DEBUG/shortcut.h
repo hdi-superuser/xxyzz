@@ -12,7 +12,7 @@ using namespace std;
 
 #define fst first
 #define snd second
-#define int long long
+#define ll long long
 #define pb push_back
 #define mp make_pair
 #define sz(x) int(x.size())

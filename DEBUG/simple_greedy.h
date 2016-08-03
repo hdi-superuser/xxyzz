@@ -7,9 +7,7 @@
     Simple greedy method without rotation.
  */
 
-struct rectangle {
-    int a, b, idx;
-} rect[N];
+rectangle rect[N];
 
 void arrange() {
     int cnt = 0;

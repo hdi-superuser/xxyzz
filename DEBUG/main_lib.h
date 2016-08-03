@@ -15,5 +15,6 @@
 #include "global_method.h"
 #include "binpack_naive_algo.h"
 #include "simple_greedy.h"
+#include "queue_greedy.h"
 
 #endif // MAIN_LIB_H_INCLUDED
