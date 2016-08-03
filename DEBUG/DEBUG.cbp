@@ -43,6 +43,7 @@
 		<Unit filename="main_lib.h" />
 		<Unit filename="shortcut.h" />
 		<Unit filename="simple_greedy.h" />
+		<Unit filename="test.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

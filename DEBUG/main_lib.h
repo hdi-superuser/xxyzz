@@ -11,7 +11,7 @@
 #include "chk_s.h"
 #include "global_var.h"
 #include "io_data.h"
-
+#include "test.h"
 #include "global_method.h"
 #include "binpack_naive_algo.h"
 #include "simple_greedy.h"

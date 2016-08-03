@@ -13,6 +13,6 @@ main( void ) {
     if (!ok_s(m, n, k, a, b)) outbrk(-1);
 
     simple_greedy(m, n, k, a, b);
-
+    excute_testing();
     export_data();
 }

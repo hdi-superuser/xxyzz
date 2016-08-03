@@ -27,15 +27,16 @@
 1470059361 c:\users\duy huynh\desktop\tht\solution\debug\binpack_naive_algo.h
 	"main_lib.h"
 
-1470169869 source:c:\users\duy huynh\desktop\xxyzz\debug\main.cpp
+1470217845 source:c:\users\duy huynh\desktop\xxyzz\debug\main.cpp
 	"main_lib.h"
 
-1470169841 c:\users\duy huynh\desktop\xxyzz\debug\main_lib.h
+1470217385 c:\users\duy huynh\desktop\xxyzz\debug\main_lib.h
 	<bits/stdc++.h>
 	"shortcut.h"
 	"chk_s.h"
 	"global_var.h"
 	"io_data.h"
+	"test.h"
 	"global_method.h"
 	"binpack_naive_algo.h"
 	"simple_greedy.h"
@@ -52,12 +53,15 @@
 1470156563 c:\users\duy huynh\desktop\xxyzz\debug\io_data.h
 	"main_lib.h"
 
-1470169821 c:\users\duy huynh\desktop\xxyzz\debug\binpack_naive_algo.h
+1470213959 c:\users\duy huynh\desktop\xxyzz\debug\binpack_naive_algo.h
 	"main_lib.h"
 
 1470169808 c:\users\duy huynh\desktop\xxyzz\debug\global_method.h
 	"main_lib.h"
 
-1470169899 c:\users\duy huynh\desktop\xxyzz\debug\simple_greedy.h
+1470213115 c:\users\duy huynh\desktop\xxyzz\debug\simple_greedy.h
+	"main_lib.h"
+
+1470218115 c:\users\duy huynh\desktop\xxyzz\debug\test.h
 	"main_lib.h"
 
