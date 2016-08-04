@@ -3,6 +3,7 @@
 
 /*
     Naive algorithm for bin - packing problems.
+    Time complexity: O(K!*2^K*K*M*N).
  */
 
 #include "main_lib.h"

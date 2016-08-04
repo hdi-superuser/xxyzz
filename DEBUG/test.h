@@ -4,7 +4,8 @@
 #include "main_lib.h"
 
 /*
-    Main testing program
+    Main testing program.
+    Time complexity: O(M*N*(M+N)).
  */
 
 bool fr[N][N];
@@ -46,8 +47,8 @@ bool ok_rect() {
 }
 
 void excute_testing() {
-    if (ok_rect()) cerr << "AC" << endl;
-    else cerr << "WA" << endl;
+    if (ok_rect()) cerr << "Check result: AC" << endl;
+    else cerr << "Check result: WA" << endl;
 }
 
 #endif // TEST_H_INCLUDED

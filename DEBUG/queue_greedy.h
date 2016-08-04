@@ -5,11 +5,12 @@
 
 /*
     Greedy with queue tricks.
+    Time complexity: O(max(K^2, log2(2^K)).
  */
 
 struct qrs_cmp {
     bool operator() (regions a, regions b) {
-        return a.hi() != b.hi() ? a.hi() > b.hi() : a.wi() > b.wi();
+        return a.hi() != b.hi() ? a.hi() < b.hi() : a.wi() < b.wi();
     }
 };
 
@@ -60,7 +61,7 @@ void arrange_by_queue() {
         int d = (select_item > 0 ? obj.a : obj.b);
         int r = (select_item > 0 ? obj.b : obj.a);
 
-        lrs_result.push_back(make_regions(reg.x1, reg.y1, reg.x1 + d, reg.y1 + r, lrs[select_item].idx));
+        lrs_result.push_back(make_regions(reg.x1, reg.y1, reg.x1 + d, reg.y1 + r, lrs[abs(select_item)].idx));
         if (++cnt >= k) { finish = true; return; }
 
         pair<regions, regions> n_obj1, n_obj2;

@@ -5,6 +5,7 @@
 
 /*
     Simple greedy method without rotation.
+    Time complexity: O(K*M*N).
  */
 
 rectangle rect[N];
