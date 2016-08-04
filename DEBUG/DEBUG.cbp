@@ -35,8 +35,10 @@
 		<Unit filename="binpack_naive_algo.h" />
 		<Unit filename="chk_s.h" />
 		<Unit filename="global_method.h" />
+		<Unit filename="global_timer.h" />
 		<Unit filename="global_var.h" />
 		<Unit filename="io_data.h" />
+		<Unit filename="log.txt" />
 		<Unit filename="main.cpp" />
 		<Unit filename="main.inp" />
 		<Unit filename="main.out" />

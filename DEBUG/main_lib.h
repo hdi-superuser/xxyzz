@@ -8,13 +8,15 @@
  */
 
 #include "shortcut.h"
-#include "chk_s.h"
 #include "global_var.h"
+#include "global_timer.h"
+#include "chk_s.h"
 #include "io_data.h"
-#include "test.h"
 #include "global_method.h"
+
 #include "binpack_naive_algo.h"
 #include "simple_greedy.h"
 #include "queue_greedy.h"
+#include "test.h"
 
 #endif // MAIN_LIB_H_INCLUDED

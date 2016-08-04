@@ -17,6 +17,11 @@ void import_data() {
     rep(i, 1, k) { in(a[i]); in(b[i]); }
 }
 
+void message_nosol(string s) {
+    flog << s << " status: no solution." << endl;
+    cerr << s << " status: no solution." << endl;
+}
+
 void export_data() {
     if (no_solution) outbrk(-1);
 
@@ -24,6 +29,11 @@ void export_data() {
         rep(y, 1, n) out(mat_res[x][y], " ");
         outln();
     }
+
+    flog << "Check status: AC" << endl;
+
+    cl = clock() - cl;
+    fprintf(stderr, "Total Execution Time = %lf seconds\n", cl / CLOCKS_PER_SEC);
 }
 
 #endif // IO_DATA_H_INCLUDED

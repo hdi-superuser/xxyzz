@@ -1,1 +1,2 @@
-Check result: AC
+excute binpack_naive.
+Check status: AC

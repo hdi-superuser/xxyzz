@@ -9,16 +9,37 @@
  */
 
 rectangle rect[N];
+bool simple_greedy_tle = false;
 
 void arrange() {
     int cnt = 0;
     rep(i, 1, k) {
+        if (TLE()) {
+            flog << "simple_greedy: TLE" << endl;
+            cerr << "simple_greedy: TLE" << endl;
+            simple_greedy_tle = true;
+            return;
+        }
+
         bool cont = false;
 
         rep(j1, 1, m) {
+            if (TLE()) {
+                flog << "simple_greedy: TLE" << endl;
+                cerr << "simple_greedy: TLE" << endl;
+                simple_greedy_tle = true;
+                return;
+            }
+
             if (cont) break;
 
             rep(j2, 1, n) {
+                if (TLE()) {
+                    flog << "simple_greedy: TLE" << endl;
+                    simple_greedy_tle = true;
+                    return;
+                }
+
                 if (cont) break;
                 if (j1 + rect[i].a - 1 > m || j2 + rect[i].b - 1 > n) continue;
 
@@ -50,6 +71,8 @@ bool greater_than(rectangle a, rectangle b) {
 }
 
 void simple_greedy(int m, int n, int k, int a[], int b[]) {
+    init_time("simple_greedy");
+
     cover_data(a, b);
 
     sort(rect + 1, rect + k + 1, less_than);
@@ -58,11 +81,15 @@ void simple_greedy(int m, int n, int k, int a[], int b[]) {
     arrange();
     if (finish) { back_up(); return; }
 
+    if (simple_greedy_tle) return;
+
     sort(rect + 1, rect + k + 1, greater_than);
     finish = false;
 
     arrange();
-    if (finish) { back_up(); return; }
+    if (finish) back_up();
+
+    return;
 }
 
 #endif // SIMPLE_GREEDY_H_INCLUDED

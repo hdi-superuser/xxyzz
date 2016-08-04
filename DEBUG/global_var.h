@@ -13,8 +13,14 @@
 #define MOD 1000000007
 #define inf 0x7fffffff
 
+ofstream flog("log.txt");
+
+const double ETM = inf;
+
 int m, n, k, a[N], b[N];
 int mat_res[N][N], mat[N][N];
+
+double cl;
 
 bool no_solution, finish;
 

@@ -47,8 +47,8 @@ bool ok_rect() {
 }
 
 void excute_testing() {
-    if (ok_rect()) cerr << "Check result: AC" << endl;
-    else cerr << "Check result: WA" << endl;
+    if (ok_rect()) flog << "Check result: AC" << endl;
+    else flog << "Check result: WA" << endl;
 }
 
 #endif // TEST_H_INCLUDED

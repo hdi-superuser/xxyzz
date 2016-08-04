@@ -7,6 +7,14 @@
     Global method for this solution.
  */
 
+void initializer_data() {
+    memset(mat, 0, sizeof mat);
+    memset(mat_res, 0, sizeof mat_res);
+
+    no_solution = true;
+    finish = false;
+}
+
 rectangle make_rectangle(int x, int y, int id) {
     rectangle myrect;
     myrect.a = x;   myrect.b = y;   myrect.idx = id;

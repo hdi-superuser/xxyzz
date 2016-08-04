@@ -19,7 +19,7 @@ vector <regions> lrs_result;
 
 priority_queue <regions, vector <regions>, qrs_cmp > qrs;
 
-bool pin[N];
+bool pin[N], queue_greedy_tle = false;
 
 bool lrs_cmp(rectangle a, rectangle b) {
     return a.a != b.a ? a.a > b.a : a.b > b.b;
@@ -36,11 +36,25 @@ void arrange_by_queue() {
     int cnt = 0;
 
     while (sz(qrs) && sz(lrs)) {
+        if (TLE()) {
+            flog << "queue_greedy: TLE" << endl;
+            cerr << "queue_greedy: TLE" << endl;
+            queue_greedy_tle = true;
+            return;
+        }
+
         regions reg = qrs.top();  qrs.pop();
         if (reg.isEmpty()) continue;
 
         int dif = inf, select_item = 0;
         rep(i, 1, sz(lrs) - 1) {
+            if (TLE()) {
+                flog << "queue_greedy: TLE" << endl;
+                cerr << "queue_greedy: TLE" << endl;
+                queue_greedy_tle = true;
+                return;
+            }
+
             if (pin[i]) continue;
 
             if (reg.hi() >= lrs[i].a && reg.wi() >= lrs[i].b) {
@@ -98,8 +112,12 @@ void generate_mat_res() {
 }
 
 void queue_greedy(int m, int n, int k, int a[], int b[]) {
+    init_time("queue_greedy");
+
     arrange_by_queue();
     if (finish) generate_mat_res();
+
+    return;
 }
 
 #endif // QUEUE_GREEDY_H_INCLUDED
