@@ -24,12 +24,13 @@ struct rectangle {
 
 struct regions {
     int x1, y1, x2, y2;
+    int color = 0;
+
     int hi() { return abs(x2 - x1); }
     int wi() { return abs(y2 - y1); }
-    int color = 0;
-    int size() {
-        return abs(x2 - x1) * abs(y2 - y1);
-    }
+
+    int size() { return hi() * wi(); }
+    bool isEmpty() { return x1 == x2 || y1 == y2; }
 };
 
 #endif // GLOBAL_VAR_H_INCLUDED

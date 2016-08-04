@@ -41,6 +41,7 @@
 		<Unit filename="main.inp" />
 		<Unit filename="main.out" />
 		<Unit filename="main_lib.h" />
+		<Unit filename="queue_greedy.h" />
 		<Unit filename="shortcut.h" />
 		<Unit filename="simple_greedy.h" />
 		<Unit filename="test.h" />
