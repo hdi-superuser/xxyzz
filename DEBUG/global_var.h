@@ -9,13 +9,13 @@
 
 #define file_in "main.inp"
 #define file_out "main.out"
-#define N 5001
+#define N 1001
 #define MOD 1000000007
 #define inf 0x7fffffff
 
 ofstream flog("log.txt");
 
-const double ETM = inf;
+const double ETM = 0.5;
 
 int m, n, k, a[N], b[N];
 int mat_res[N][N], mat[N][N];

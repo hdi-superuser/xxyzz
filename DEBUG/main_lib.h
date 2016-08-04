@@ -15,6 +15,7 @@
 #include "global_method.h"
 
 #include "binpack_naive_algo.h"
+#include "binpack_naive_rev.h"
 #include "simple_greedy.h"
 #include "queue_greedy.h"
 #include "test.h"

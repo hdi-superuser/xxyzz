@@ -24,9 +24,15 @@ void _auto() {
     initializer_data();
     binpack_naive(m, n, k, a, b);
     if (finish && ok_rect()) { export_data(); exit(0); }
-    else if (!binpack_naive_tle) message_nosol("binpack_greedy");
+    else if (!binpack_naive_tle) message_nosol("binpack_naive");
+
+    initializer_data();
+    binpack_naive_rev(m, n, k, a, b);
+    if (finish && ok_rect()) { export_data(); exit(0); }
+    else if (!binpack_naive_tle) message_nosol("binpack_naive_rev");
 
     export_data();
+    return;
 }
 
 main( void ) {
@@ -34,10 +40,7 @@ main( void ) {
     cin.tie(NULL); cout.tie(NULL);
 
     cl = clock();
-    //_auto();
-    data_file();    import_data();
-    binpack_naive(m, n, k, a, b);
-    export_data();
+    _auto();
 
     return 0;
 }

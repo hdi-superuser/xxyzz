@@ -23,7 +23,12 @@ void message_nosol(string s) {
 }
 
 void export_data() {
-    if (no_solution) outbrk(-1);
+    if (no_solution) {
+        out(-1);
+        cl = clock() - cl;
+        fprintf(stderr, "Total Execution Time = %lf seconds\n", cl / CLOCKS_PER_SEC);
+        return;
+    }
 
     rep(x, 1, m) {
         rep(y, 1, n) out(mat_res[x][y], " ");

@@ -37,8 +37,6 @@ void arrange_by_queue() {
 
     while (sz(qrs) && sz(lrs)) {
         if (TLE()) {
-            flog << "queue_greedy: TLE" << endl;
-            cerr << "queue_greedy: TLE" << endl;
             queue_greedy_tle = true;
             return;
         }
@@ -49,8 +47,6 @@ void arrange_by_queue() {
         int dif = inf, select_item = 0;
         rep(i, 1, sz(lrs) - 1) {
             if (TLE()) {
-                flog << "queue_greedy: TLE" << endl;
-                cerr << "queue_greedy: TLE" << endl;
                 queue_greedy_tle = true;
                 return;
             }
@@ -115,6 +111,12 @@ void queue_greedy(int m, int n, int k, int a[], int b[]) {
     init_time("queue_greedy");
 
     arrange_by_queue();
+    if (TLE()) {
+        flog << "queue_greedy: TLE" << endl;
+        cerr << "queue_greedy: TLE" << endl;
+        queue_greedy_tle = true;
+        return;
+    }
     if (finish) generate_mat_res();
 
     return;

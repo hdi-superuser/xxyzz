@@ -13,9 +13,8 @@ int x[N], idx[N];
 bool binpack_naive_tle = false;
 
 void chk_mat() {
+    if (binpack_naive_tle) return;
     if (TLE()) {
-        flog << "binpack_naive: TLE" << endl;
-        cerr << "binpack_naive: TLE" << endl;
         binpack_naive_tle = true;
         return;
     }
@@ -25,8 +24,6 @@ void chk_mat() {
     int cnt = 0;
     rep(j, 1, k) {
         if (TLE()) {
-            flog << "binpack_naive: TLE" << endl;
-            cerr << "binpack_naive: TLE" << endl;
             binpack_naive_tle = true;
             return;
         }
@@ -39,8 +36,6 @@ void chk_mat() {
 
         rep(j1, 1, m) {
             if (TLE()) {
-                flog << "binpack_naive: TLE" << endl;
-                cerr << "binpack_naive: TLE" << endl;
                 binpack_naive_tle = true;
                 return;
             }
@@ -49,8 +44,6 @@ void chk_mat() {
 
             rep(j2, 1, n) {
                 if (TLE()) {
-                    flog << "binpack_naive: TLE" << endl;
-                    cerr << "binpack_naive: TLE" << endl;
                     binpack_naive_tle = true;
                     return;
                 }
@@ -72,8 +65,6 @@ void chk_mat() {
 
 void backtrack(int i) {
     if (TLE()) {
-        flog << "binpack_naive: TLE" << endl;
-        cerr << "binpack_naive: TLE" << endl;
         binpack_naive_tle = true;
         return;
     }
@@ -88,8 +79,6 @@ void backtrack(int i) {
 
 bool chk_permutation() {
     if (TLE()) {
-        flog << "binpack_naive: TLE" << endl;
-        cerr << "binpack_naive: TLE" << endl;
         binpack_naive_tle = true;
         return false;
     }

@@ -27,10 +27,10 @@
 1470059361 c:\users\duy huynh\desktop\tht\solution\debug\binpack_naive_algo.h
 	"main_lib.h"
 
-1470301088 source:c:\users\duy huynh\desktop\xxyzz\debug\main.cpp
+1470346468 source:c:\users\duy huynh\desktop\xxyzz\debug\main.cpp
 	"main_lib.h"
 
-1470296347 c:\users\duy huynh\desktop\xxyzz\debug\main_lib.h
+1470346484 c:\users\duy huynh\desktop\xxyzz\debug\main_lib.h
 	<bits/stdc++.h>
 	"shortcut.h"
 	"global_var.h"
@@ -39,39 +39,42 @@
 	"io_data.h"
 	"global_method.h"
 	"binpack_naive_algo.h"
+	"binpack_naive_rev.h"
 	"simple_greedy.h"
 	"queue_greedy.h"
 	"test.h"
 
-1470235950 c:\users\duy huynh\desktop\xxyzz\debug\shortcut.h
+1470342572 c:\users\duy huynh\desktop\xxyzz\debug\shortcut.h
 	"main_lib.h"
 
 1470154709 c:\users\duy huynh\desktop\xxyzz\debug\chk_s.h
 	"main_lib.h"
 
-1470300826 c:\users\duy huynh\desktop\xxyzz\debug\global_var.h
+1470347108 c:\users\duy huynh\desktop\xxyzz\debug\global_var.h
 	"main_lib.h"
 
-1470298857 c:\users\duy huynh\desktop\xxyzz\debug\io_data.h
+1470347088 c:\users\duy huynh\desktop\xxyzz\debug\io_data.h
 	"main_lib.h"
 
-1470299553 c:\users\duy huynh\desktop\xxyzz\debug\binpack_naive_algo.h
+1470346606 c:\users\duy huynh\desktop\xxyzz\debug\binpack_naive_algo.h
 	"main_lib.h"
 
-1470297853 c:\users\duy huynh\desktop\xxyzz\debug\global_method.h
+1470343580 c:\users\duy huynh\desktop\xxyzz\debug\global_method.h
 	"main_lib.h"
 
-1470299472 c:\users\duy huynh\desktop\xxyzz\debug\simple_greedy.h
+1470346808 c:\users\duy huynh\desktop\xxyzz\debug\simple_greedy.h
 	"main_lib.h"
 
-1470294682 c:\users\duy huynh\desktop\xxyzz\debug\test.h
+1470345759 c:\users\duy huynh\desktop\xxyzz\debug\test.h
 	"main_lib.h"
 
-1470299455 c:\users\duy huynh\desktop\xxyzz\debug\queue_greedy.h
+1470346714 c:\users\duy huynh\desktop\xxyzz\debug\queue_greedy.h
 	"main_lib.h"
 
 1470296017 c:\users\duy huynh\desktop\xxyzz\debug\timer.h
 
 1470298286 c:\users\duy huynh\desktop\xxyzz\debug\global_timer.h
 	"main_lib.h"
+
+1470346544 c:\users\duy huynh\desktop\xxyzz\debug\binpack_naive_rev.h
 

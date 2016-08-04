@@ -15,8 +15,6 @@ void arrange() {
     int cnt = 0;
     rep(i, 1, k) {
         if (TLE()) {
-            flog << "simple_greedy: TLE" << endl;
-            cerr << "simple_greedy: TLE" << endl;
             simple_greedy_tle = true;
             return;
         }
@@ -25,8 +23,6 @@ void arrange() {
 
         rep(j1, 1, m) {
             if (TLE()) {
-                flog << "simple_greedy: TLE" << endl;
-                cerr << "simple_greedy: TLE" << endl;
                 simple_greedy_tle = true;
                 return;
             }
@@ -35,7 +31,6 @@ void arrange() {
 
             rep(j2, 1, n) {
                 if (TLE()) {
-                    flog << "simple_greedy: TLE" << endl;
                     simple_greedy_tle = true;
                     return;
                 }
@@ -76,17 +71,27 @@ void simple_greedy(int m, int n, int k, int a[], int b[]) {
     cover_data(a, b);
 
     sort(rect + 1, rect + k + 1, less_than);
-    finish = false;
+    finish = false; arrange();
+    if (TLE()) {
+        flog << "simple_greedy: TLE" << endl;
+        cerr << "simple_greedy: TLE" << endl;
+        simple_greedy_tle = true;
+        return;
+    }
 
-    arrange();
     if (finish) { back_up(); return; }
 
     if (simple_greedy_tle) return;
 
     sort(rect + 1, rect + k + 1, greater_than);
-    finish = false;
+    finish = false; arrange();
+    if (TLE()) {
+        flog << "simple_greedy: TLE" << endl;
+        cerr << "simple_greedy: TLE" << endl;
+        simple_greedy_tle = true;
+        return;
+    }
 
-    arrange();
     if (finish) back_up();
 
     return;

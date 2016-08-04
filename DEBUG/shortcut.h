@@ -19,8 +19,8 @@ using namespace std;
 #define ALL(x) (x).begin(), (x).end()
 #define popcnt(x) __builtin_popcount(x)
 #define remain(x) if (x > MOD) x -= MOD
-#define rep(i, j, k) for (register int i = j; i <= k; i++)
-#define dow(i, j, k) for (register int i = j; i >= k; i--)
+#define rep(i, j, k) for (int i = j; i <= k; i++)
+#define dow(i, j, k) for (int i = j; i >= k; i--)
 #define debug(x) cerr << __LINE__ << ": " << #x << " = " << (x) << endl
 
 typedef pair<int, int> ii;

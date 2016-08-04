@@ -1,2 +1,8 @@
+excute queue_greedy.
+queue_greedy status: no solution.
+excute simple_greedy.
+simple_greedy status: no solution.
 excute binpack_naive.
-Check status: AC
+binpack_naive: TLE
+excute binpack_naive.
+binpack_naive_rev: TLE
