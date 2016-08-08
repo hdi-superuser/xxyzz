@@ -1,10 +1,11 @@
-#ifndef BINPACK_NAIVE_H_REV
-#define BINPACK_NAIVE_H_REV
+#ifndef BINPACK_NAIVE_H_REV_INCLUDED
+#define BINPACK_NAIVE_H_REV_INCLUDED
 
+int d[N];
 void binpack_naive_rev(int m, int n, int k, int a[], int b[]) {
     init_time("binpack_naive");
 
-    rep(i, 1, k) idx[i] = i;
+    rep(i, 1, k) d[i] = i;
     no_solution = true;
 
     do {
@@ -14,11 +15,12 @@ void binpack_naive_rev(int m, int n, int k, int a[], int b[]) {
             binpack_naive_tle = true;
             return;
         }
-
+        rep(i, 1, k) idx[i] = d[i];
+        reverse(idx + 1, idx + k + 1);
         if(chk_permutation()) break;
-    } while (std::next_permutation(idx + 1, idx + k + 1));
+    } while (std::next_permutation(d + 1, d + k + 1));
 
     return;
 }
 
-#endif //BINPACK_NAIVE_H_REV
+#endif //BINPACK_NAIVE_H_REV_INCLUDED

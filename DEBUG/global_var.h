@@ -15,7 +15,7 @@
 
 ofstream flog("log.txt");
 
-const double ETM = 0.5;
+const double ETM = 5.0;
 
 int m, n, k, a[N], b[N];
 int mat_res[N][N], mat[N][N];

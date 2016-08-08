@@ -33,8 +33,10 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="binpack_naive_algo.h" />
+		<Unit filename="binpack_naive_random.h" />
 		<Unit filename="binpack_naive_rev.h" />
 		<Unit filename="chk_s.h" />
+		<Unit filename="fill_greedy.h" />
 		<Unit filename="global_method.h" />
 		<Unit filename="global_timer.h" />
 		<Unit filename="global_var.h" />

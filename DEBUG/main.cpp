@@ -31,6 +31,11 @@ void _auto() {
     if (finish && ok_rect()) { export_data(); exit(0); }
     else if (!binpack_naive_tle) message_nosol("binpack_naive_rev");
 
+    initializer_data();
+    binpack_naive_random(m, n, k, a, b);
+    if (finish && ok_rect()) { export_data(); exit(0); }
+    else if (!binpack_naive_tle) message_nosol("binpack_naive_random");
+
     export_data();
     return;
 }
@@ -41,6 +46,5 @@ main( void ) {
 
     cl = clock();
     _auto();
-
     return 0;
 }
